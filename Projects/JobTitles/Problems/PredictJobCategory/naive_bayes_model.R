@@ -5,9 +5,9 @@ library(e1071)  # for naiveBayes()
 library(tm)  # for counting word frequencies
 
 # ==============================================================================
-# Load Data
+# Load Data (Assumes your current working directory is the JobTitles project directory)
 
-jobtitles <- read.csv("Datasets/JobTitles/jobtitles.csv", na.strings=c("NA", ""))
+jobtitles <- read.csv("Data/jobtitles.csv", na.strings=c("NA", ""))
 
 
 # ==============================================================================

@@ -2,8 +2,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import BernoulliNB
 import pandas as pd
 
-# Load the data
-job_titles = pd.read_csv("Datasets/JobTitles/jobtitles.csv")
+# Load the data (Assumes your current working directory is the JobTitles project directory)
+job_titles = pd.read_csv("Data/jobtitles.csv")
 
 # Convert the categories Technology, Sales, and Finance to numbers 0, 1, and 2
 y = list(map(lambda x: {'finance':0, 'sales':1, 'technology':2}[x], job_titles.job_category[:10]))

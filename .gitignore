@@ -1,2 +1,6 @@
 # Ignore Mac DS_Store files
 .DS_Store
+
+# Ignore R Project files
+.Rproj.user
+MLPB.Rproj

@@ -3,5 +3,9 @@
 
 # Ignore R Project files
 .Rproj.user
+.Rhistory
+.RData
 MLPB.Rproj
-README.html
+
+# Ignore html generated files (generated in RStudio to preview .md files)
+*.html

@@ -8,27 +8,31 @@ This is where MLPB steps in. Want to see ML problems with sparse data? Got it. W
 
 ## How It Works
 
-MLPB contains a directory of *Datasets* and a directory of *Problems*. For example
+MLPB contains a directory of *Projects*. Within each project is a *Data* directory and a *Problems* directory. This looks something like
 
 ```
-DataSets/
+Projects/
+
   Iris/
-    Description.md
-    iris.csv
-
-Problems/
-  IrisSpecies/
-    README.md
-    predict_species_rf.py
-    predict_species_rf.R
-
-  IrisSepalLength/
-    README.md
-    predict_sepal_length_rf.py
-    predict_sepal_length_rf.R
-    iris_xgboost.py
+    Data/
+      iris.csv
+    Problems/
+      PredictSpecies/
+        predict_species_rf.R
+        predict_species_rf.py
+        predict_species_xgb.R
+      PredictSepalLength/
+        iris_sepal_length_xgb.R
+      
+  JobTitles/
+    Data/
+      jobtitles.csv
+    Problems/
+      PredictJobCategory/
+        naive_bayes_model.py
+        naive_bayes_model.R
 ```
 
-Each *README.md* file includes the details about the dataset/problem, and files like *predict_species_rf.py* and *predict_species_rf.R* provide example solutions (in this case using random forest) to their respective problem.
+Most of these directories should include a *README.md* file providing details about the data and problems. There can be multiple problems that use a single dataset, and a single problem can (and should) have example solutions using multiple models.  For example, files like *predict_species_rf.py* and *predict_species_rf.R* provide example solutions to predicting the species of an Iris flower.
 
 On top of all this, MLPB should (hopefully) develop a well documented wiki making it easy to search for problems using  characteristics like "mult-class classification", "sparse data", "unbalanced target", etc.

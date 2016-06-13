@@ -17,12 +17,12 @@ DataSets/
     iris.csv
 
 Problems/
-  Predicting Iris Species/
+  IrisSpecies/
     Description.md
     predict_species_rf.py
     predict_species_rf.R
 
-  Predicting Iris Sepal Length/
+  IrisSepalLength/
     Description.md
     predict_sepal_length_rf.py
     predict_sepal_length_rf.R

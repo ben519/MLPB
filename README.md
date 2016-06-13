@@ -18,17 +18,17 @@ DataSets/
 
 Problems/
   IrisSpecies/
-    Description.md
+    README.md
     predict_species_rf.py
     predict_species_rf.R
 
   IrisSepalLength/
-    Description.md
+    README.md
     predict_sepal_length_rf.py
     predict_sepal_length_rf.R
     iris_xgboost.py
 ```
 
-Each *Description.md* file includes the details about the dataset/problem, and files like *predict_species_rf.py* and *predict_species_rf.R* provide example solutions (in this case using random forest) to their respective problem.
+Each *README.md* file includes the details about the dataset/problem, and files like *predict_species_rf.py* and *predict_species_rf.R* provide example solutions (in this case using random forest) to their respective problem.
 
 On top of all this, MLPB should (hopefully) develop a well documented wiki making it easy to search for problems using  characteristics like "mult-class classification", "sparse data", "unbalanced target", etc.

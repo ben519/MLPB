@@ -1,10 +1,5 @@
 # Predicting Iris Species
-
-The goal of this problem is to predict a particular species of iris flowers (setosa, verginica, or versicolor) using features
-Sepal.Length, Sepal.Width,Petal.Length, Petal.Width, all of which are real-valued and contain no missing data.
+Predict the species of an iris flower (setosa, verginica, or versicolor) given some of its properties.
 
 ### Tags
-- supervised_learning
-- iris_dataset
-- classification
-- multi-class
+[supervised-learning] [iris-dataset] [classification] [multi-class]

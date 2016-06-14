@@ -33,4 +33,4 @@ Projects/
 
 Most of these directories should include a *README.md* file providing details about the data and/or problem. A single dataset can have have multiple problems, and a single problem can have multiple example models/solutions.
 
-On top of all this, MLPB will eventually develop a well documented wiki making it easy to search for problems using  characteristics like "mult-class classification", "sparse data", "unbalanced target", etc.
+You can browse all the datasets and problems in MLPB's [wiki](https://github.com/ben519/MLPB/wiki). There, you can also search for problems with specific tags like [mult-class classification], [sparse-data], [NLP], etc.

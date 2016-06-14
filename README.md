@@ -8,7 +8,7 @@ This is where MLPB steps in. Want to see ML problems with sparse data? Got it. W
 
 ## How It Works
 
-MLPB contains a directory of *Projects*. Within each project is a *Data* directory and a *Problems* directory. This looks something like
+MLPB contains a directory of *Projects*. Within each project is a designated *Data* directory and one or more machine learning problem directories. This looks something like
 
 ```
 Projects/
@@ -16,23 +16,21 @@ Projects/
   Iris/
     Data/
       iris.csv
-    Problems/
-      PredictSpecies/
-        predict_species_rf.R
-        predict_species_rf.py
-        predict_species_xgb.R
-      PredictSepalLength/
-        iris_sepal_length_xgb.R
+    PredictSpecies/
+      predict_species_rf.R
+      predict_species_rf.py
+      predict_species_xgb.R
+    PredictSepalLength/
+      iris_sepal_length_xgb.R
       
   JobTitles/
     Data/
       jobtitles.csv
-    Problems/
-      PredictJobCategory/
-        naive_bayes_model.py
-        naive_bayes_model.R
+    PredictJobCategory/
+      naive_bayes_model.py
+      naive_bayes_model.R
 ```
 
-Most of these directories should include a *README.md* file providing details about the data and problems. There can be multiple problems that use a single dataset, and a single problem can (and should) have example solutions using multiple models.  For example, files like *predict_species_rf.py* and *predict_species_rf.R* provide example solutions to predicting the species of an Iris flower.
+Most of these directories should include a *README.md* file providing details about the data and/or problem. A single dataset can have have multiple problems, and a single problem can have multiple example models/solutions.
 
-On top of all this, MLPB should (hopefully) develop a well documented wiki making it easy to search for problems using  characteristics like "mult-class classification", "sparse data", "unbalanced target", etc.
+On top of all this, MLPB will eventually develop a well documented wiki making it easy to search for problems using  characteristics like "mult-class classification", "sparse data", "unbalanced target", etc.

@@ -33,7 +33,7 @@ inspect(dtm)
 # prepare training data
 train.x <- data.frame(inspect(dtm)[1:10,]) # use the first 10 samples to build the training set
 train.x[, 1:10] <- lapply(train.x, FUN=function(x) factor(x, levels=c("0", "1"))) # convert columns to factor type so that naiveBayes knows features are Bernoulli random variables
-train.y <- factor(categories[1:10])
+train.y <- factor(jobtitles$job_category[1:10])
 
 # prepare test data
 test.x <- data.frame(inspect(dtm)[11:12,]) # use the last 2 samples to build the test set

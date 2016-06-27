@@ -1,0 +1,8 @@
+"Opponent","OppRk","SaintsAtHome","Expert1PredWin","Expert2PredWin","SaintsWon"
+"Falcons",28,TRUE,TRUE,TRUE,TRUE
+"Cowgirls",16,TRUE,TRUE,TRUE,TRUE
+"Eagles",30,FALSE,FALSE,TRUE,TRUE
+"Bucs",6,TRUE,FALSE,TRUE,FALSE
+"Bucs",14,TRUE,FALSE,FALSE,FALSE
+"Panthers",9,FALSE,TRUE,TRUE,FALSE
+"Panthers",18,FALSE,FALSE,FALSE,FALSE

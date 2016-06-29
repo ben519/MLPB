@@ -6,3 +6,6 @@ The features (e.g. IsHomeTeam, Expert1Prediction, ...) were designed so that the
 
 ### Tags
 [supervised-learning] [football-dataset] [classification]
+
+### References
+- [Random Forest From Top To Bottom - GormAnalysis](http://gormanalysis.com/random-forest-from-top-to-bottom/)

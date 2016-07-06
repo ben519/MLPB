@@ -9,8 +9,8 @@ It mimics a common issue involving multi-level data - if you want to predict the
 
 Note that two versions of the test set are given:
 
-* *test.csv* includes CityIDs not seen in the train.csv
-* *test_simple.csv* (a subset of test) only has CityIDs which are seen in the train.csv
+* *test.csv* includes CityIDs not seen in train.csv
+* *test_simple.csv* (a subset of test) only has CityIDs which are seen in train.csv
 
 Also note that the R code used to generate the data is provided via *data_generation.R*
 

@@ -28,7 +28,6 @@ cities <- data.table(
 
 samples <- data.table(
   CityID=rep(cities$CityID, cities$Samples),
-  SampleID=1:sum(cities$Samples),
   Income=rnorm(sum(cities$Samples), mean=rep(cities$CityIncome, cities$Samples), sd=10000)
 )
 

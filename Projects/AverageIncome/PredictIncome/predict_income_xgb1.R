@@ -37,7 +37,7 @@ transformTrain <- function(folds=5){
   # Finally, the test sets are concatenated, producing a new training dataset
   
   test_folds <- chunk(sample(nrow(train), nrow(train)), folds)
-  train_folds <- lapply(test_folds, function(testIdxs) seq(nrow(train))[-test_folds[[1]]])
+  train_folds <- lapply(test_folds, function(testIdxs) seq(nrow(train))[-testIdxs)
   
   tests <- lapply(seq_len(folds), FUN=function(i){
     train1 <- train[train_folds[[i]]]

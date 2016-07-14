@@ -19,10 +19,10 @@ lapply(c("data.table", "ggplot2", "xgboost", "DiagrammeR", "Matrix"), require, c
 rmse <- function(preds, actuals) sqrt(mean((preds-actuals)^2))
 
 #======================================================================================================
-# Load data
+# Load data (Assumes your current working directory is the Predict Income problem directory)
 
-train <- fread("Data/train.csv")
-test <- fread("Data/test.csv")
+train <- fread("_Data/train.csv")
+test <- fread("_Data/test.csv")
 setnames(test, "Income", "IncomeTruth")
 
 #======================================================================================================

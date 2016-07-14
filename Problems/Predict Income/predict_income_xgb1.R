@@ -22,10 +22,10 @@ rmse <- function(preds, actuals) sqrt(mean((preds-actuals)^2))
 chunk <- function(x,n) split(x, cut(seq_along(x), n, labels = FALSE)) 
 
 #======================================================================================================
-# Load data
+# Load data (Assumes your current working directory is the Predict Income problem directory)
 
-train <- fread("Data/train.csv")
-test <- fread("Data/test.csv")
+train <- fread("_Data/train.csv")
+test <- fread("_Data/test.csv")
 setnames(test, "Income", "IncomeTruth")
 
 #======================================================================================================

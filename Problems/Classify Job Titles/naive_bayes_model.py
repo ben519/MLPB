@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import BernoulliNB
 import pandas as pd
 
-# Load the data (Assumes your current working directory is the Classify Job Titles project directory)
+# Load the data (Assumes your current working directory is the Classify Job Titles problem directory)
 job_titles = pd.read_csv("_Data/jobtitles.csv")
 
 # Convert the categories Technology, Sales, and Finance to numbers 0, 1, and 2

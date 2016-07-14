@@ -1,0 +1,5 @@
+"LeadID","CompanyName","TypeOfBusiness","FacebookLikes","TwitterFollowers","Website","PhoneNumber","Contact","Sale"
+16,"Comic Corner","books",89,67,"comiccorner.com","3103808080","manager",FALSE
+17,"Hungry Hippo","restaurant",51,28,"hhcafe.com","3101676069","owner",FALSE
+18,"Toys Galore","hobbies & toys",8,NA,"toysgalore.co","5047937687","general line",TRUE
+19,"Suit & Tie Depot",NA,64,25,"suitandtiedepot.org","6463653606","owner",TRUE

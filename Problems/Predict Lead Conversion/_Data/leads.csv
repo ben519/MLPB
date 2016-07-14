@@ -1,0 +1,20 @@
+"LeadID","CompanyName","TypeOfBusiness","FacebookLikes","TwitterFollowers","Website","PhoneNumber","Contact","Sale"
+1,"Smokie's Bar & Grill","restaurant",215,NA,NA,"3103791669","general line",FALSE
+2,"Schwin's","grocery",17,1,"schwingrocery.com","5048613148","owner",FALSE
+3,"Reading Rainbow","books",6,NA,"readingrainbowstore.us","6465307643","owner",TRUE
+4,"Frank's Shoes","cothing",17,3,"franksshoes.com","5041487836","owner",TRUE
+5,"Joe's Hobby Shop","hobbies & toys",NA,NA,NA,"5041046466","other",FALSE
+6,"Sunshine Boutique","cothing",2,11,NA,"5049738899","manager",TRUE
+7,"The Reading Corner",NA,17,NA,NA,"5044022950","other",FALSE
+8,"Tools & Supplies",NA,NA,NA,NA,"3102404791","owner",TRUE
+9,"Taylor Anne","cothing",163,14,"taylorannestore.com","5049165496","general line",TRUE
+10,"Bob's Coffee House","restaurant",NA,10,"bobscoffee.org","5047780393","owner",FALSE
+11,"Juicy Burger","restaurant",112,20,NA,"6469025004","other",FALSE
+12,"Bait n Tackle",NA,22,NA,NA,"5049359316","other",TRUE
+13,"Boudreaux's","grocery",27,NA,"groceryonline.com/boudreauxs","3103950018","other",FALSE
+14,"Fresh Market","grocery",NA,NA,"freshmarketgrocery.com","5044820245","general line",FALSE
+15,"Missy's","cothing",NA,NA,"missysclothesstore.net","3105408705","other",FALSE
+16,"Comic Corner","books",89,67,"comiccorner.com","3103808080","manager",FALSE
+17,"Hungry Hippo","restaurant",51,28,"hhcafe.com","3101676069","owner",FALSE
+18,"Toys Galore","hobbies & toys",8,NA,"toysgalore.co","5047937687","general line",TRUE
+19,"Suit & Tie Depot",NA,64,25,"suitandtiedepot.org","6463653606","owner",TRUE

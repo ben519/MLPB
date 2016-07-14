@@ -5,10 +5,9 @@ library(e1071)  # for naiveBayes()
 library(tm)  # for counting word frequencies
 
 # ==============================================================================
-# Load Data (Assumes your current working directory is the JobTitles project directory)
+# Load Data (Assumes your current working directory is the Classify Job Titles project directory)
 
-jobtitles <- read.csv("Data/jobtitles.csv", na.strings=c("NA", ""))
-
+jobtitles <- read.csv("_Data/jobtitles.csv", na.strings=c("NA", ""))
 
 # ==============================================================================
 # Count word frequencies
@@ -22,7 +21,6 @@ dtm <- DocumentTermMatrix(my.corpus)
 
 # inspect the results
 inspect(dtm)
-
 
 # ==============================================================================
 # Train a naive bayes model
@@ -44,7 +42,6 @@ classifier <- naiveBayes(x=train.x, y=train.y, laplace=0.000000001)  # use lapla
 
 # make prediction on the unlabeled data
 predict(classifier, test.x, type="raw")
-
 
 # ==============================================================================
 # Train a naive bayes model with laplace (alpha) = 1

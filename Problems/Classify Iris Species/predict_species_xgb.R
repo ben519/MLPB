@@ -7,18 +7,18 @@
 lapply(c("data.table", "ggplot2", "xgboost"), require, character.only=T)
 
 #======================================================================================================
+# IMPORTANT: Set your working directory to this problem directoy, "Classify Iris Species"
+
+setwd("Path/To/Classify Iris Species")
+
+#======================================================================================================
 # Load data
 
-# Convert iris to a data.table object to make it easier to work with (although this isn't necessary)
-iris <- data.table(iris)
+train <- fread("_Data/train.csv")
+test <- fread("_Data/train.csv")
 
-#--------------------------------------------------
-# Separate into train and test sets
-
-set.seed(2016)
-trainIDs <- sample(nrow(iris), 100)
-train <- iris[trainIDs]
-test <- iris[!trainIDs]
+# Convert Species to factor type
+train[, Species := factor(Species, levels=c("setosa", "versicolor", "virginica"))]
 
 #======================================================================================================
 # Explore
@@ -59,7 +59,7 @@ ggplot(train, aes(x=Petal.Length, y=Petal.Width, color=Species))+geom_point(size
 # Build matrix of training features
 train_X <- as.matrix(train[, !"Species", with=FALSE])
 
-# Build 1-column matrix of training samples (convert labels to 0, 1, ...)
+# Build 1-column matrix of training samples (convert labels to 0, 1, ... to satisfy xgboost's required input format)
 train_y <- as.matrix(as.integer(train$Species)-1)  # (setosa=0, versicolor=1, virginica=2)
 
 #--------------------------------------------------

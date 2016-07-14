@@ -1,12 +1,12 @@
 # Imports
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier  # version 3.2.4.3.1
+from sklearn.ensemble import RandomForestClassifier
 
 #======================================================================================================
-# Load Data (Assumes your current working directory is the Football project directory)
+# Load Data (Assumes your current working directory is the Predict NFL Game Winner problem directory)
 
-train = pd.read_csv("Data/train.csv")
-test = pd.read_csv("Data/test.csv")
+train = pd.read_csv("_Data/train.csv")
+test = pd.read_csv("_Data/test.csv")
 
 #======================================================================================================
 # Format the training data to the specifications for RandomForestClassifier

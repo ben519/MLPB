@@ -1,13 +1,13 @@
 options(scipen=20, digits=4)
 
 # Load packages
-library(randomForest)  # version 4.6-12
+library(randomForest)
 
 #======================================================================================================
-# Load Data (Assumes your current working directory is the Football project directory)
+# Load Data (Assumes your current working directory is the Predict NFL Game Winner problem directory)
 
-train <- read.csv("Data/train.csv")
-test <- read.csv("Data/test.csv")
+train <- read.csv("_Data/train.csv")
+test <- read.csv("_Data/test.csv")
 
 #======================================================================================================
 # Format the training data to the specifications for randomForest

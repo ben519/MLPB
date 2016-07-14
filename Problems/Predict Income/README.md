@@ -11,7 +11,7 @@ At this time, two [XGBoost](https://github.com/dmlc/xgboost) models are given:
  - **predict_income_xgb2.R** - one-hot-encodes City, Region, and Country, generating a sparse matrix to train an xgboost model
 
 ### Tags
-[supervised-learning] [average_income-dataset] [regression] [xgboost] [gradient_boosting] [multi-level-data] [hierarchical-data] [one-hot-encoding]
+[gradient_boosting] [hierarchical-data] [multi-level-data] [one-hot-encoding] [R] [regression] [sparse-data] [supervised-learning] [xgboost]
 
 ### References
 This problem dataset was inspired by [this question](http://stats.stackexchange.com/questions/221358/how-to-deal-with-hierarchical-nested-data-in-machine-learning) on [CrossValidated](http://stats.stackexchange.com/).

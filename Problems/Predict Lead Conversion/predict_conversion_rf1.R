@@ -1,4 +1,4 @@
-# random forest model where we first reduce the cardinality of each categorical feature
+# random forest model where we first reduce the cardinality of each categorical feature by basketing infrequent values into "catch-all" groups
 
 options(scipen=20, digits=4)
 
@@ -148,7 +148,7 @@ test[, list(ProbSaleRk, CompanyName, ProbSale, Sale)]  # Looks perty good!
 #--------------------------------------------------
 # Let's evaluate the results using area under the ROC curve using the pROC package
 
-rocCurve <- roc(response=test$Sale, predictor=test$ProbSale)
+rocCurve <- roc(response=test$Sale, predictor=test$BG, direction="<")
 rocCurve$auc  # .812
 plot(rocCurve)
 

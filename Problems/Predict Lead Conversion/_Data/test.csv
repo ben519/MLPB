@@ -1,5 +1,11 @@
 "LeadID","CompanyName","TypeOfBusiness","FacebookLikes","TwitterFollowers","Website","PhoneNumber","Contact","Sale"
-16,"Comic Corner","books",89,67,"comiccorner.com","3103808080","manager",FALSE
-17,"Hungry Hippo","restaurant",51,28,"hhcafe.com","3101676069","owner",FALSE
-18,"Toys Galore","hobbies & toys",8,NA,"toysgalore.co","5047937687","general line",TRUE
-19,"Suit & Tie Depot",NA,64,25,"suitandtiedepot.org","6463653606","owner",TRUE
+2,"The Law Offices of Smith","law office",87,46,"smithlaw.net","3109859670","other",FALSE
+3,"Bait n Tackle",NA,22,NA,NA,"6464315297","owner",TRUE
+6,"Smokie's Bar & Grill","restaurant",215,NA,NA,"6461572195","general line",FALSE
+11,"Toys Galore","hobbies & toys",8,NA,"toysgalore.co","5046252309","general line",FALSE
+12,"Bob's Coffee House","restaurant",NA,10,"bobscoffee.org","3101449412","owner",FALSE
+13,"Boudreaux's","grocery",27,NA,"groceryonline.com/boudreauxs","6468440060","manager",TRUE
+19,"Suit & Tie Depot",NA,64,25,"suitandtiedepot.org","5046063929","owner",FALSE
+22,"Tools & Supplies",NA,NA,NA,NA,"3101508786","owner",FALSE
+29,"Reading Rainbow","books",6,NA,"readingrainbowstore.us","5049169286","owner",FALSE
+30,"Katz Claims","law office",144,36,"katzclaims.com","5045337861","owner",FALSE

@@ -23,7 +23,7 @@ train
 # Some thoughts & ideas come to mind
 # - CompanyName could be useful in theory, but we're not going to deal with the complexities of NLP feature engineering here...
 # - Phone number probably isn't useful... but maybe AreaCode is since it should separate the samples by geography => demographics
-# - It probably makes sense to order the Contact values: general line < other < manager < owner (this effects the model's construction)
+# - It probably makes sense to order the Contact values: general line < other < manager < owner (this affects the model's construction)
 # - Website (like PhoneNumber) is too unique to be useful, but maybe businesses that use .net and .org are less likely to buy our software
 
 # Now let's see what our overall hit ratio is

@@ -13,7 +13,7 @@ library(stringr)
 library(pROC)
 
 #======================================================================================================
-# Load Data (Assumes your current working directory is the Predict Lead Conversion problem directory)
+# Load Data (Assumes your current working directory is the Rank Sales Leads problem directory)
 
 train <- fread("_Data/train.csv", select=c("LeadID", "CompanyName", "PhoneNumber", "Contact", "Sale"))
 test <- fread("_Data/test.csv", select=c("LeadID", "CompanyName", "PhoneNumber", "Contact", "Sale"))

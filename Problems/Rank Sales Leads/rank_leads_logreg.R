@@ -10,6 +10,7 @@ options(scipen=20, digits=4)
 # Load packages
 library(data.table)
 library(stringr)
+library(caret)  # for assessing feature importances
 library(pROC)
 
 #======================================================================================================
@@ -57,7 +58,7 @@ test[, AreaCode := substr(PhoneNumber, 1, 3)]  # test
 train_dummies <- dcast(train[, list(LeadID, AreaCode)], LeadID ~ AreaCode, fun.aggregate=function(x) 1, fill=0, value.var="AreaCode")
 setnames(train_dummies, colnames(train_dummies), paste0("AC", colnames(train_dummies)))  # Prefix each column name with "AC"
 setnames(train_dummies, "ACLeadID", "LeadID")  # Change "ACLeadID" back to "LeadID"
-train <- bg[train, on="LeadID"]  # Merge the dummy columns back to the train dataset
+train <- train_dummies[train, on="LeadID"]  # Merge the dummy columns back to the train dataset
 
 test_dummies <- dcast(test[, list(LeadID, AreaCode)], LeadID ~ AreaCode, fun.aggregate=function(x) 1, fill=0, value.var="AreaCode")
 setnames(test_dummies, colnames(test_dummies), paste0("AC", colnames(test_dummies)))  # Prefix each column name with "AC"
@@ -65,7 +66,7 @@ setnames(test_dummies, "ACLeadID", "LeadID")  # Change "ACLeadID" back to "LeadI
 test <- test_dummies[test, on="LeadID"]  # Merge the dummy columns back to the test dataset
 
 # Our test dataset needs to include every dummy variable that's in the train set. Add any missing area code columns with all 0s, if needed.
-areacodes_in_train_not_in_test <- setdiff(colnames(bg), colnames(kl))
+areacodes_in_train_not_in_test <- setdiff(colnames(train_dummies), colnames(test_dummies))
 if(length(areacodes_in_train_not_in_test) > 0) test[, eval(parse(text= paste0("`:=`(", paste0(areacodes_in_train_not_in_test, "=0L", collapse=","), ")") ))]
 
 #======================================================================================================
@@ -78,7 +79,12 @@ if(length(areacodes_in_train_not_in_test) > 0) test[, eval(parse(text= paste0("`
 features <- c("Contact", colnames(train_dummies[, !c("LeadID", "AC310"), with=FALSE]))
 formula_str <- paste("Sale ~", paste(features, collapse=" + "))
 model <- glm(formula_str, family=binomial(link='logit'), data=train)
+
+#--------------------------------------------------
+# Evaluate the fit
+
 summary(model)
+varImp(model, scale=FALSE)
 
 #======================================================================================================
 # Make some predictions on the test set & evaluate the results

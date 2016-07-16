@@ -101,6 +101,6 @@ test[, list(ProbSaleRk, CompanyName, ProbSale, Sale)]  # Looks perty good!
 # Let's evaluate the results using area under the ROC curve using the pROC package
 
 rocCurve <- roc(response=test$Sale, predictor=test$ProbSale, direction="<")
-rocCurve$auc  # .812
+rocCurve$auc  # 0.812
 plot(rocCurve)
 

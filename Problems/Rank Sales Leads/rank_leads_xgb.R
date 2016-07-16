@@ -1,4 +1,4 @@
-# gradient boosting model using XGBoost
+# Gradient Boosting model using XGBoost
 
 # Notes about this model:
 # XGBoost requires a single matrix of numeric values as input. This means non ordered categorical features need to be

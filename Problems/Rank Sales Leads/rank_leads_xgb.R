@@ -65,14 +65,6 @@ test[tobMap, TobIdx := TobIdx, on="TypeOfBusiness"]
 testTOBSparseM <- sparseMatrix(i=test[!is.na(TobIdx)]$RowIdx, j=test[!is.na(TobIdx)]$TobIdx, x=1, dims=c(nrow(test), nrow(tobMap)), dimnames=list(NULL, tobMap$TypeOfBusiness))
 
 #--------------------------------------------------
-# Contact (convert to numeric, 1-4)
-
-# In this case, we know all the possible contact types
-contacts <- c("general line", "other", "manager", "owner")  # Note the order of the elements
-train[, Contact := match(Contact, contacts)]
-test[, Contact := match(Contact, contacts)]
-
-#--------------------------------------------------
 # AreaCode
 
 train[, AreaCode := substr(PhoneNumber, 1, 3)]  # train
@@ -120,6 +112,14 @@ trainExtensionSparseM <- sparseMatrix(i=train$RowIdx, j=train$ExtensionIdx, x=1,
 # test
 test[extensionMap, ExtensionIdx := ExtensionIdx, on="WebsiteExtension"]
 testExtensionSparseM <- sparseMatrix(i=test[!is.na(ExtensionIdx)]$RowIdx, j=test[!is.na(ExtensionIdx)]$ExtensionIdx, x=1, dims=c(nrow(test), nrow(extensionMap)), dimnames=list(NULL, extensionMap$WebsiteExtension))
+
+#--------------------------------------------------
+# Contact (convert to numeric, 1-4)
+
+# In this case, we know all the possible contact types
+contacts <- c("general line", "other", "manager", "owner")  # Note the order of the elements
+train[, Contact := match(Contact, contacts)]
+test[, Contact := match(Contact, contacts)]
 
 #--------------------------------------------------
 # Combine training features into a single sparse matrix

@@ -75,13 +75,13 @@ test['Contact'] = pd.Categorical(test.Contact, categories=contacts, ordered=True
 
 features = ['Contact'] + train_areacode_dummies.columns.tolist()
 
-logreg = LogisticRegression()
+logreg = LogisticRegression(C=1.0)  # Note that C controls the effect regularization
 logreg.fit(X=train[features].values, y=train.Sale.values)
 
 #======================================================================================================
 # Make some predictions on the test set & evaluate the results
 
-test['ProbSale'] = logreg.predict_proba(test[features].values)
+test['ProbSale'] = logreg.predict_proba(test[features].values)[:, 1]
 
 #--------------------------------------------------
 # Rank the predictions from most likely to least likely
@@ -97,4 +97,4 @@ test[['ProbSaleRk', 'CompanyName', 'ProbSale', 'Sale']]  # Looks perty good!
 #--------------------------------------------------
 # Evaluate the results using area under the ROC curve
 
-roc_auc_score(y_true=test.Sale, y_score=test.ProbSale)  # 0.875
+roc_auc_score(y_true=test.Sale, y_score=test.ProbSale)  # 1

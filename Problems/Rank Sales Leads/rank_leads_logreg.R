@@ -1,4 +1,4 @@
-# logistic regression model
+# Logistic Regression model
 
 # Notes about this model:
 # Due to the low number of samples and relatively large number of predictors, we cannot apply logistic regression using every

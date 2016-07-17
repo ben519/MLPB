@@ -1,3 +1,6 @@
+# Gradient Boosting model using XGBoost
+
+# Notes about this model:
 # XGBoost requires a single matrix of numeric values as input. This means non ordered categorical features need to be
 # one-hot-encoded. This can result in a really large sparse matrix, but XGBoost allows for the input matrix to be represented
 # in compressed format via dgCMatrix, so we'll utilize that option here
@@ -146,7 +149,6 @@ bst = xgb.train(params=boosting_params, dtrain=trainM, num_boost_round=10)
 #======================================================================================================
 # Make some predictions on the test set & evaluate the results
 
-# 7 entities, each contains 10 features
 test['ProbSale'] = bst.predict(testM)
 
 #--------------------------------------------------

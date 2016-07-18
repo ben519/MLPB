@@ -33,7 +33,7 @@ train[, list(Samples=.N, Sales=sum(Sale), HitRatio = sum(Sale)/.N)]  # .35
 # Feature engineering and transforming the training dataset
 
 # Some things to keep in mind
-# - We have to deal with missing values (NAs). We could impute something into their place, but this is likely to degrade
+# - We have to deal with missing values (NAs). We could impute mean or median into their place, but this is likely to degrade
 #   the model's performace. NAs here have special meaning. E.g. FacebookLikes = NA means the company does not have a facebook.
 #   This has very different implications than, "The company has a facebook, but we didn't bother to track how many Likes it has"
 # - randomForest only accepts numeric and factor values and it can't handle NAs. So we need to convert categorical features to factors

@@ -31,4 +31,4 @@ Problems/
 Most of these directories should include a *README.md* file providing details about the problem, data, and solution(s). You can browse all the problems in MLPB's [wiki](https://github.com/ben519/MLPB/wiki). You can also search for problems with specific tags like [mult-class classification], [sparse-data], [NLP], etc.
 
 ## Contact
-If you'd like to contact me regaring bugs, questions, or general consulting, feel free to drop me a line - bgorman519@gmail.com
+If you'd like to contact me regarding bugs, questions, or general consulting, feel free to drop me a line - bgorman519@gmail.com

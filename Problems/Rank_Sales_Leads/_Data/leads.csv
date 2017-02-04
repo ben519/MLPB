@@ -1,0 +1,31 @@
+LeadID,CompanyName,TypeOfBusiness,FacebookLikes,TwitterFollowers,Website,PhoneNumber,Contact,Sale
+1,Drugs R Us,drug store,NA,NA,NA,5042538336,general line,FALSE
+2,The Law Offices of Smith,law office,87,46,smithlaw.net,3109859670,other,FALSE
+3,Bait n Tackle,NA,22,NA,NA,6464315297,owner,TRUE
+4,Joe's Hobby Shop,hobbies & toys,NA,NA,NA,5043304798,other,FALSE
+5,The Corner,corner store,26,NA,thecornerstore.com,6461045953,owner,TRUE
+6,Smokie's Bar & Grill,restaurant,215,NA,NA,6461572195,general line,FALSE
+7,Schwin's,grocery,17,1,schwingrocery.com,5045885661,owner,TRUE
+8,Lots O' Stuff,corner store,NA,NA,lotsostuff.net,3106358130,owner,FALSE
+9,Rampart Supplies,corner store,7,NA,NA,5045973037,general line,FALSE
+10,Missy's,cothing,NA,NA,missysclothesstore.net,5045705441,other,FALSE
+11,Toys Galore,hobbies & toys,8,NA,toysgalore.co,5046252309,general line,FALSE
+12,Bob's Coffee House,restaurant,NA,10,bobscoffee.org,3101449412,owner,FALSE
+13,Boudreaux's,grocery,27,NA,groceryonline.com/boudreauxs,6468440060,manager,TRUE
+14,Notary Express,law office,63,20,notaryexpress4u.com,6464267124,manager,FALSE
+15,Fresh Market,grocery,NA,NA,freshmarketgrocery.com,5041375023,general line,FALSE
+16,Frank's Shoes,cothing,17,3,franksshoes.com,6465266938,owner,TRUE
+17,Sunshine Boutique,cothing,2,11,NA,5046647993,manager,FALSE
+18,Car Rescue,auto parts,NA,21,NA,3109785061,other,FALSE
+19,Suit & Tie Depot,NA,64,25,suitandtiedepot.org,5046063929,owner,FALSE
+20,Tim Auto,auto parts,167,48,timautoparts.com,3108637574,manager,TRUE
+21,Taylor Anne,cothing,163,14,taylorannestore.com,6464316190,general line,TRUE
+22,Tools & Supplies,NA,NA,NA,NA,3101508786,owner,FALSE
+23,Hungry Hippo,restaurant,51,28,hhcafe.com,5049414938,owner,TRUE
+24,The Reading Corner,NA,17,NA,NA,6467041649,other,FALSE
+25,Fix It Right,auto parts,101,71,fixitrightauto.net,3101172830,general line,FALSE
+26,Juicy Burger,restaurant,112,20,NA,3103833242,other,FALSE
+27,Comic Corner,books,89,67,comiccorner.com,5044820790,manager,TRUE
+28,Smokes and Beer,corner store,NA,NA,NA,5046995720,other,FALSE
+29,Reading Rainbow,books,6,NA,readingrainbowstore.us,5049169286,owner,FALSE
+30,Katz Claims,law office,144,36,katzclaims.com,5045337861,owner,FALSE

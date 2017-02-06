@@ -13,14 +13,14 @@ MLPB contains a directory of *Problems*. Within each problem is a designated *\_
 ```
 Problems/
 
-  Classify Iris Species/
+  Classify_Iris_Species/
     _Data/
       iris.csv
       train.csv
       test.csv
     predict_species_xgb.R
     
-  Predict NFL Game Winner/
+  Predict_NFL_Game_Winner/
     _Data/
       train.csv
       test.csv

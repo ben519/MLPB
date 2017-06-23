@@ -158,7 +158,7 @@ svmCV[["BestParams"]]
 
 # Plot the score for each (cost, type) pairs
 svmCV[["ParamGrid"]]
-ggplot(svmCV[["ParamGrid"]], aes(x=cost, y=Score, color=factor(type)))+geom_line()+geom_point()
+ggplot(svmCV[["ParamGrid"]], aes(x=cost, y=Score, color=factor(type)))+geom_line()+geom_point()+scale_x_log10()
 
 #======================================================================================================
 # Ensemble KNN, SVM using Logistic Regression

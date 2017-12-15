@@ -28,8 +28,8 @@ sigmoid <- function(x){
 # Datasets
 
 # Read train & test data
-train <- fread("~/Projects/R/MLPB/Problems/Classify Images of Stairs/_Data/train.csv")
-test <- fread("~/Projects/R/MLPB/Problems/Classify Images of Stairs/_Data/test.csv")
+train <- fread("https://raw.githubusercontent.com/ben519/MLPB/master/Problems/Classify%20Images%20of%20Stairs/_Data/train.csv")
+test <- fread("https://raw.githubusercontent.com/ben519/MLPB/master/Problems/Classify%20Images%20of%20Stairs/_Data/test.csv")
 
 # Insert Label for plots
 train[, Label := ifelse(IsStairs, "Stairs", "Not Stairs")]

@@ -34,5 +34,5 @@ Most of these directories should include a *README.md* file providing details ab
 If you'd like to contact me regarding bugs, questions, or general consulting, feel free to drop me a line - bgorman519@gmail.com
 
 ## Support
-Found this *free* repo helpful? Show your support. Check out check out [GormAnalysis Courses](https://gormanalysis.teachable.com/) and [buy some merch](https://shop.gormanalysis.com/)!
+Found this *free* repo helpful? Show your support. Check out [GormAnalysis Courses](https://gormanalysis.teachable.com/) and [buy some merch](https://shop.gormanalysis.com/)!
 [![GormAnalysis Shop](https://www.gormanalysis.com/ads/gormanalysis-shop.jpg)](https://shop.gormanalysis.com/)
